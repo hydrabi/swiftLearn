@@ -83,3 +83,100 @@ public struct SegmentioVerticalSeparatorOptions {
         self.color = color
     }
 }
+
+// MARK: - Indicator
+
+public enum SegmentioIndicatorType {
+    case top
+    case bottom
+}
+
+public struct SegmentioIndicatorOptions {
+    var type : SegmentioIndicatorType
+    var ratio : CGFloat
+    var height : CGFloat
+    var color : UIColor
+    
+    public init(type:SegmentioIndicatorType = .bottom,
+                ratio:CGFloat = 1,
+                height:CGFloat = 2,
+                color:UIColor = .orange){
+        self.type = type
+        self.ratio = ratio
+        self.height = height
+        self.color = color
+    }
+}
+
+// MARK: - Position
+public enum SegmentioPosition {
+    case dynamic
+    case fixed(maxVisibleItems:Int)
+}
+
+// MARK: - Control options
+public enum SegmentioStyle : String {
+    case onlyLabel, onlyImage, imageOverLabel, imageUnderLabel,imageBeforeLabel,imageAfterLabel
+    
+    public static let allStyles = [
+        onlyLabel,
+        onlyImage,
+        imageOverLabel,
+        imageUnderLabel,
+        imageBeforeLabel,
+        imageAfterLabel
+    ]
+    
+    public func isWithText() -> Bool {
+        switch self {
+        case .onlyLabel,.imageOverLabel,.imageUnderLabel,.imageBeforeLabel,.imageAfterLabel:
+            return true
+        default:
+            return false
+        }
+    }
+    
+    public func isWithImage() -> Bool {
+        switch self {
+        case .imageOverLabel,.imageUnderLabel,.imageBeforeLabel,.imageAfterLabel,.onlyImage:
+            return true
+        default:
+            return false
+        }
+    }
+    
+    public var layoutMargins : CGFloat {
+        let defaultLayoutMargins : CGFloat = 8.0
+        switch self {
+        case .onlyLabel,.imageAfterLabel,.imageBeforeLabel,.imageOverLabel,.imageUnderLabel:
+            return 4 * defaultLayoutMargins
+        default:
+            return 2 * defaultLayoutMargins
+        }
+    }
+}
+
+public typealias segmentioStates = (defaultState:SegmentioState,selectedState:SegmentioState,highlightedState:SegmentioState)
+
+public struct SegmentioOptions {
+    var backgroundColor : UIColor
+    var segmentPosition : SegmentioPosition
+    var scrolEnabled : Bool
+    var horizontalSeparatorOptions : SegmentioHorizontalSeparatorOptions?
+    var verticalSeparatorOptions : SegmentioVerticalSeparatorOptions?
+    var indicatorOptions : SegmentioIndicatorOptions?
+    var imageContentMode : UIView.ContentMode
+    var labelTextAligment : NSTextAlignment
+    var labelTextNumberOfLines : Int
+    var states : segmentioStates
+    var animationDuration : CFTimeInterval
+    
+    public init() {
+        self.backgroundColor = .lightGray
+        self.segmentPosition = .fixed(maxVisibleItems: 4)
+        self.scrolEnabled = true
+        self.indicatorOptions = SegmentioIndicatorOptions()
+        self.horizontalSeparatorOptions = SegmentioHorizontalSeparatorOptions()
+        self.verticalSeparatorOptions = SegmentioVerticalSeparatorOptions()
+    }
+}

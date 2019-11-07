@@ -55,5 +55,7 @@ open class Segmentio: UIView {
         }
     }
     
-//    open private var segmentioItems = [segmentioItem]()
+    open private var segmentioItems = [segmentioItem]()
+    private var setmentioCollectionView : UICollectionView?
+//    private var segmentioOptions = segmentio
 }
