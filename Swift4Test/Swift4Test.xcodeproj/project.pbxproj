@@ -16,6 +16,8 @@
 		801FF31D22B8DAB6001958C4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801FF31C22B8DAB6001958C4 /* RootViewController.swift */; };
 		801FF31F22B8DE2F001958C4 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801FF31E22B8DE2F001958C4 /* SimpleValidationViewController.swift */; };
 		801FF32722B8E98E001958C4 /* Simple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801FF32522B8E98E001958C4 /* Simple.storyboard */; };
+		8035CC5B23B3C29C0097E386 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035CC5A23B3C29C0097E386 /* ObserverViewController.swift */; };
+		8035CC5D23B3C38D0097E386 /* Observer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8035CC5C23B3C38D0097E386 /* Observer.storyboard */; };
 		803E70F122B76C24001EFC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E70F022B76C24001EFC61 /* AppDelegate.swift */; };
 		803E70F322B76C24001EFC61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E70F222B76C24001EFC61 /* ViewController.swift */; };
 		803E70F622B76C24001EFC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803E70F422B76C24001EFC61 /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		801FF31C22B8DAB6001958C4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		801FF31E22B8DE2F001958C4 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
 		801FF32522B8E98E001958C4 /* Simple.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Simple.storyboard; sourceTree = "<group>"; };
+		8035CC5A23B3C29C0097E386 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
+		8035CC5C23B3C38D0097E386 /* Observer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Observer.storyboard; sourceTree = "<group>"; };
 		803E70ED22B76C24001EFC61 /* Swift4Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift4Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803E70F022B76C24001EFC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		803E70F222B76C24001EFC61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,15 @@
 			path = Simple;
 			sourceTree = "<group>";
 		};
+		8035CC5923B3C1150097E386 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				8035CC5A23B3C29C0097E386 /* ObserverViewController.swift */,
+				8035CC5C23B3C38D0097E386 /* Observer.storyboard */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		803E70E422B76C24001EFC61 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +212,7 @@
 		8099CAE522C0759E001DD9B8 /* LearnRX */ = {
 			isa = PBXGroup;
 			children = (
+				8035CC5923B3C1150097E386 /* Observer */,
 				8099CAFE22C0992B001DD9B8 /* Combine */,
 				8099CAF722C07D84001DD9B8 /* ConditionBool */,
 				8099CAF622C07CDB001DD9B8 /* Root */,
@@ -340,6 +354,7 @@
 				80FF014522BFC9FB00A48A9F /* Segue.storyboard in Resources */,
 				800FEAAE22B9D9C70080208C /* BetterSegmentViewController.storyboard in Resources */,
 				8099CAED22C0778C001DD9B8 /* Subject.storyboard in Resources */,
+				8035CC5D23B3C38D0097E386 /* Observer.storyboard in Resources */,
 				8099CAF122C077CB001DD9B8 /* Buffer.storyboard in Resources */,
 				801FF32722B8E98E001958C4 /* Simple.storyboard in Resources */,
 				803E70F622B76C24001EFC61 /* Main.storyboard in Resources */,
@@ -413,6 +428,7 @@
 				806FB5C322BD2266007AEEE5 /* SubjectViewController.swift in Sources */,
 				800FEAAC22B9D7C00080208C /* BetterSegmentViewController.swift in Sources */,
 				801FF31F22B8DE2F001958C4 /* SimpleValidationViewController.swift in Sources */,
+				8035CC5B23B3C29C0097E386 /* ObserverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

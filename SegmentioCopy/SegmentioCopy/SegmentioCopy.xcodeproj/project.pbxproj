@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804F177D23A29D4E00535E73 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804F177C23A29D4E00535E73 /* Food.swift */; };
 		8058C098236C56A200E7DF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058C097236C56A200E7DF78 /* AppDelegate.swift */; };
 		8058C09A236C56A200E7DF78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058C099236C56A200E7DF78 /* SceneDelegate.swift */; };
 		8058C09F236C56A200E7DF78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8058C09D236C56A200E7DF78 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		804F177C23A29D4E00535E73 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		8058C094236C56A200E7DF78 /* SegmentioCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentioCopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8058C097236C56A200E7DF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8058C099236C56A200E7DF78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				8058C0A5236C56A500E7DF78 /* Info.plist */,
 				80A83941236D826C007AAE3B /* HomeViewController.swift */,
 				80A83943236D839F007AAE3B /* EmbedContainerViewController.swift */,
+				804F177C23A29D4E00535E73 /* Food.swift */,
 			);
 			path = SegmentioCopy;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804F177D23A29D4E00535E73 /* Food.swift in Sources */,
 				80A83946236DB15E007AAE3B /* SegmentioOptions.swift in Sources */,
 				8074C52E236C742500D7378A /* Segmentio.swift in Sources */,
 				8058C098236C56A200E7DF78 /* AppDelegate.swift in Sources */,
